@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tavasz</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('spring.jpg') repeat no-repeat center/cover;
+            position: relative;
+        }
+        body::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(140deg, rgba(255, 122, 34, 0.486), rgba(221, 48, 146, 0.445));
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-block: 30px;
+            gap: 10px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+            padding: 8px 16px;
+            box-shadow: 4px 4px 10px rgba(117, 117, 117, 0.514);
+            border-radius: 5px;
+        }
+
+        nav div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-block: 30px;
+            gap: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Tavasz</h1>
+
+    <nav>
+        <a href="./index.html">Főoldal</a>
+        <div>
+            <a href="./nyar.html">Nyár</a>
+            <a href="./osz.html">Ősz</a>
+            <a href="./tel.html">Tél</a>
+        </div>
+    </nav>
+
+    </body>
+</html>
