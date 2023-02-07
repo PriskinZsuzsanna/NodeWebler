@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/evszakok.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+body::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(140deg, rgba(255, 122, 34, 0.486), rgba(221, 48, 146, 0.445));
+    z-index: -1;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 30px;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    padding: 8px 16px;
+    box-shadow: 4px 4px 10px rgba(117, 117, 117, 0.514);
+    border-radius: 5px;
+}
+
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 30px;
+    gap: 20px;
+}
+

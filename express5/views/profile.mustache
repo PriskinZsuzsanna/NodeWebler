@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    {{> partials/header}}
+
+    <table>
+        <tr>
+            <td>Felhasználónév</td>
+            <td>{{username}}</td>
+        </tr>
+        <tr>
+            <td>Szovtver verziója</td>
+            <td>{{version}}</td>
+        </tr>
+        <tr>
+            <td>Unix időkód</td>
+            <td>{{unix}}</td>
+        </tr>
+    </table>
+
+    <form action="/profile-form/{{username}}" method="post">
+        <input type="text" name="message" placeholder="Üzenet..." autocomplete="off">
+        <button type="submit">Küldés</button>
+    </form>
+
+    {{messages}} <!--üzenetek beolvasása az oldalra-->
+
+    {{> partials/footer}}
+</body>
+
+</html>

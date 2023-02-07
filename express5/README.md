@@ -1,0 +1,9 @@
+ - template kezelés:
+ - views
+ - view engine beállításai
+ - index.mustache renderelése json objektum adataival
+ - mustache változók használata a renderelt objektum megjelenítésére {{}}
+ - req.params használata
+ - style.css linkelése renderelt oldalhoz
+ - partials {{> }}
+ - post, bodyparser
